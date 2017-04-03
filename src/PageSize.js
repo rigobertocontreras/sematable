@@ -27,7 +27,7 @@ class PageSize extends Component {
           margin: '1rem 0 1rem 0',
         }}
       >
-        <select
+        Show <select
           onChange={(e) => onChange(parseInt(e.target.value, 10))}
           value={pageSize}
           className="form-control sema-field"
@@ -48,12 +48,6 @@ class PageSize extends Component {
             ))
           }
         </select>
-        <span
-          className="sema-label"
-          style={{ whiteSpace: 'nowrap' }}
-        >
-          {`${pageSize !== -1 ? ' of' : ''} ${totalSize}`}
-        </span>
       </div>
     );
   }
